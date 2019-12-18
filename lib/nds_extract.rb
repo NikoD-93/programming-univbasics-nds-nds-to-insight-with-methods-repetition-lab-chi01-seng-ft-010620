@@ -25,7 +25,7 @@ end
 #   total
 # end
 
-def list_of_directors(directors_totals)
+def list_of_directors(source)
   # Write this implementation
 array_index = 0 
 list = []
@@ -39,19 +39,19 @@ end
 # expected: ["Larry", "Curly", "Moe", "Iggy"]
             # got: [{:name=>"Larry"}, {:name=>"Curly"}, {:name=>"Moe"}, {:name=>"Iggy"}]
 
-# def total_gross(source)
-# total = 0 
-# hash=directors_totals(source)
-# names_d=list_of_directors(source)
+def total_gross(source)
+total = 0 
+hash=directors_totals(source)
+names_d=list_of_directors(source)
 
-# i = 0 
-# while i < names_d.length do
-#   names_d = names_d[i]
-#   total+= hash[names_d]
-#   i+= 1
-# end
-# total
-# end
+i = 0 
+while i < names_d.length do
+  names_d = names_d[i]
+  total+= hash[names_d]
+  i+= 1
+end
+total
+end
 
 # got: [{:movies=>[{:release_year=>1975, :studio=>"Universal", :title=>"Jaws", :worldwide_gross=>260000000},...studio=>"Buena Vista", :title=>"Jack",:worldwide_gross=>58620973}], :name=>"Francis Ford Coppola"}]
  
