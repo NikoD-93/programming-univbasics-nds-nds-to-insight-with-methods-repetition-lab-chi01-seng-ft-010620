@@ -41,11 +41,14 @@ end
 
 def total_gross(directors_totals)
 total = 0 
-hash_index = 0
-hash =
-while hash_index < .length do
-total += 
-hash_index += 1
+hash=directors_totals(source)
+names_d=list_of_directors(source)
+
+i = 0 
+while i < names_d.length do
+  names_d = names_d[i]
+  total+= hash[names_d]
+  i+= 1
 end
 total
 end
