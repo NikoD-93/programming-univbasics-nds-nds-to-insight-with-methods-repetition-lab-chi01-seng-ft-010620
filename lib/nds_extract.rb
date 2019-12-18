@@ -43,7 +43,7 @@ total = 0
 hash = directors_totals
 hash_index = 0 
 while hash_index < directors_totals.length do
-total += hash[hash_index]
+total += hash(hash_index)
 hash_index += 1
 end
 total
