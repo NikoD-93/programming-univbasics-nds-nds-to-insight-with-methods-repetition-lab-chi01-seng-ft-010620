@@ -39,7 +39,7 @@ end
 # expected: ["Larry", "Curly", "Moe", "Iggy"]
             # got: [{:name=>"Larry"}, {:name=>"Curly"}, {:name=>"Moe"}, {:name=>"Iggy"}]
 
-def total_gross(directors_totals)
+def total_gross(source)
 total = 0 
 hash=directors_totals(source)
 names_d=list_of_directors(source)
