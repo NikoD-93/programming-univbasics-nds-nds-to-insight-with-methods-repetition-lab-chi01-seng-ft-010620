@@ -26,9 +26,31 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+array_index = 0 
+list = []
+while array_index < source.length do
+list << source[array_index][:name] 
+array_index += 1 
+end
+list 
 end
 
-def total_gross(source)
+# expected: ["Larry", "Curly", "Moe", "Iggy"]
+            # got: [{:name=>"Larry"}, {:name=>"Curly"}, {:name=>"Moe"}, {:name=>"Iggy"}]
+
+def total_gross(directors_totals)
+total = 0 
+hash = directors_totals
+hash_index = 0 
+while hash_index < directors_totals.length do
+total += hash
+hash_index += 1
+end
+total
+ end
+
+# got: [{:movies=>[{:release_year=>1975, :studio=>"Universal", :title=>"Jaws", :worldwide_gross=>260000000},...studio=>"Buena Vista", :title=>"Jack",:worldwide_gross=>58620973}], :name=>"Francis Ford Coppola"}]
+ 
   # Write this implementation
   #
   # Should use methods:
@@ -38,6 +60,3 @@ def total_gross(source)
   # Visit each key (i.e. director name), look up the value in the hash
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
-end
-
-
