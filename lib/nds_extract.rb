@@ -39,10 +39,9 @@ end
             # got: [{:name=>"Larry"}, {:name=>"Curly"}, {:name=>"Moe"}, {:name=>"Iggy"}]
 
 def total_gross(source)
-
 hash=directors_totals(source)
 names_d=list_of_directors(source)
-
+total = 0 
 i = 0 
 while i < names_d.length do
   names_d = names_d[i]
