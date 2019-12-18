@@ -40,11 +40,11 @@ end
 
 def total_gross(source)
 hash = directors_totals(source)
-names_di = list_of_directors(source)
+d_names = list_of_directors(source)
 total = 0 
 i = 0 
-while i < names_d.length do
-  names_d = names_di[i]
+while i < d_names.length do
+  names_d = d_names[i]
   total += hash[names_d]
   i += 1
 end
