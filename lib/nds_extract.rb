@@ -45,7 +45,7 @@ total = 0
 i = 0 
 while i < names_d.length do
   names_d = names_d[i]
-  total+= hash[names_d]
+  total += hash[names_d]
   i+= 1
 end
 total
