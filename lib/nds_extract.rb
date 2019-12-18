@@ -39,15 +39,15 @@ end
 # expected: ["Larry", "Curly", "Moe", "Iggy"]
             # got: [{:name=>"Larry"}, {:name=>"Curly"}, {:name=>"Moe"}, {:name=>"Iggy"}]
 
-# def total_gross(directors_totals)
-# total = 0 
-# hash_index = 0 
-# while hash_index < directors_totals.length do
-# total += directors_totals[hash_index]
-# hash_index += 1
-# end
-# total
-# end
+def total_gross(directors_totals)
+total = 0 
+hash_index = 0 
+while hash_index < directors_totals.length do
+total += directors_totals[hash_index]
+hash_index += 1
+end
+total
+end
 
 # got: [{:movies=>[{:release_year=>1975, :studio=>"Universal", :title=>"Jaws", :worldwide_gross=>260000000},...studio=>"Buena Vista", :title=>"Jack",:worldwide_gross=>58620973}], :name=>"Francis Ford Coppola"}]
  
