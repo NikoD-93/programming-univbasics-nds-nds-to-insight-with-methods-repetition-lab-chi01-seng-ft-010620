@@ -2,7 +2,6 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative './directors_database'
 
 def directors_totals(source)
-  pp directors_totals
   result = {}
   director_index = 0
   while director_index < source.size do
@@ -40,16 +39,16 @@ end
             # got: [{:name=>"Larry"}, {:name=>"Curly"}, {:name=>"Moe"}, {:name=>"Iggy"}]
 
 def total_gross(source)
-total = 0 
-hash=directors_totals(source)
-names_d=list_of_directors(source)
-i = 0 
-while i < names_d.length do
-  names_d = names_d[i]
-  total+= hash[names_d]
-  i+= 1
-end
-total
+# total = 0 
+# hash=directors_totals(source)
+# names_d=list_of_directors(source)
+# i = 0 
+# while i < names_d.length do
+#   names_d = names_d[i]
+#   total+= hash[names_d]
+#   i+= 1
+# end
+# total
 end
 
 # got: [{:movies=>[{:release_year=>1975, :studio=>"Universal", :title=>"Jaws", :worldwide_gross=>260000000},...studio=>"Buena Vista", :title=>"Jack",:worldwide_gross=>58620973}], :name=>"Francis Ford Coppola"}]
